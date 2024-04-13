@@ -5,7 +5,7 @@ const ListenerCardHorizontal = ({ }) => {
 
     return (
 
-        <div className="my-64 max-w-md relative isolate overflow-hidden rounded-md bg-neutral-900/90  ring-1 ring-white/10 hover:ring-neutral-600">
+        <div className="my-72 max-w-md relative isolate overflow-hidden rounded-md bg-neutral-900/90  ring-1 ring-white/10 hover:ring-neutral-600">
             <div className="relative mx-auto max-w-7xl px-5">
                 <div
                     className="absolute -bottom-8 -left-96 -z-10 transform-gpu blur-3xl sm:-bottom-64 sm:-left-40 lg:-bottom-32 lg:left-8 xl:-left-10"
@@ -32,7 +32,7 @@ const ListenerCardHorizontal = ({ }) => {
                             <h1 className="text-2xl text-white">Kshitij Kochhar</h1>
                         </div>
                     </div>
-                    
+
                 </div>
             </div>
         </div>

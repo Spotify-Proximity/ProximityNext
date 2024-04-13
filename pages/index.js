@@ -27,14 +27,28 @@ export default function Home() {
                     </h1>
                 </div>
 
-                <div className="w-fill">
-                    <ListenerCard />
-                    <ListenerCard />
+                <div className="flex justify-center">
+                    <div className="">
+                        <ListenerCard
+                            imageURL = {'https://www.udiscovermusic.com/wp-content/uploads/2019/12/Post-Malone-Stoney-album-cover-820.jpg'}
+                            artist = {'Post Malone'}
+                            song = {'Rockstar'}
+                            bgColor = {'bg-neutral-900/90'}
+                            textColor = {'text-white'}
+                        />
+                        <ListenerCard
+                            imageURL = {'https://hips.hearstapps.com/hmg-prod/images/7-64ecb1c909b78.png?crop=0.502xw:1.00xh;0.498xw,0&resize=1200:*'}
+                            artist = {'Taylor Swift'}
+                            song = {'Blank Space'}
+                            bgColor = {'bg-pink-500/10'}
+                            textColor = {'text-black'}
+                        />
+                    </div>
 
 
                 </div>
-                
-                    <ListenerCardHorizontal />
+
+                <ListenerCardHorizontal />
 
 
 

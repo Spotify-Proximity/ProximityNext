@@ -5,7 +5,7 @@ const ListenerCard = ({imageURL, artist, song, bgColor, textColor }) => {
     // Add logic to change background based on primary image colors
 
     return (
-            <div className={`mt-10 max-w-md ${bgColor} rounded-sm`}>
+            <div className={`m-5 max-w-md ${bgColor} rounded-sm flex-shrink-0 snap-always snap-center`}>
                 <div className=" ">
                     <div className=" ">
                         <div className=' '>

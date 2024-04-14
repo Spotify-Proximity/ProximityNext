@@ -21,7 +21,7 @@ export default function Home() {
                     </h1>
                 </div>
 
-                <div className="py-10 px-6">
+                <div className="pt-10 px-6">
                     <h1 className="text-center mb-5 text-black text-4xl font-semibold">
                         Listeners around you...
                     </h1>
@@ -34,14 +34,14 @@ export default function Home() {
                             artist = {'Post Malone'}
                             song = {'Rockstar'}
                             bgColor = {'bg-gradient-to-r from-neutral-700/90 to-black'}
-                            textColor = {'text-white'}
+                            textColor = {'text-neutral-300/90'}
                         />
                         <ListenerCard
                             imageURL = {'https://hips.hearstapps.com/hmg-prod/images/7-64ecb1c909b78.png?crop=0.502xw:1.00xh;0.498xw,0&resize=1200:*'}
                             artist = {'Taylor Swift'}
                             song = {'Blank Space'}
                             bgColor = {'bg-gradient-to-r from-pink-500/10 to-pink-500/40'}
-                            textColor = {'text-black'}
+                            textColor = {'text-neutral-100/40'}
                         />
                     </div>
 

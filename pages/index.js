@@ -20,6 +20,23 @@ export default function Home() {
         setListeners(data);
     }
 
+    async function postListeners() {
+        const endPoint = 'http://localhost:3003/user';
+        const result = await fetch(endPoint, {
+            method: 'POST',
+            body: JSON.stringify({
+                name: 'Aaftab Jafri',
+                age: 19
+            }), 
+            headers: {
+                'Content-Type': 'application/json'
+            }
+
+        });
+        const data = await result.json();
+        getListeners();
+    }
+
     useEffect(() => {
         //getListeners();
     }, []);
@@ -62,6 +79,12 @@ export default function Home() {
                             ))
                         }
                     </div>
+
+
+                    <div className="flex">
+                    <button onClick={postListeners} className="bg-red-600/90 text-white px-4 py-2 rounded-lg">Post Listeners</button>
+                    
+                </div>
 
                 <div className="flex justify-center">
                     <div className="">

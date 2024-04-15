@@ -12,7 +12,7 @@ export default function Home() {
 
 
     async function getListeners() {
-        const endPoint = 'http://localhost:3003/userList';
+        const endPoint = 'http://localhost:3002/userList';
         const result = await fetch(endPoint, {
             method: 'GET',
         });
@@ -21,7 +21,7 @@ export default function Home() {
     }
 
     async function postListeners() {
-        const endPoint = 'http://localhost:3003/user';
+        const endPoint = 'http://localhost:3002/user';
         const result = await fetch(endPoint, {
             method: 'POST',
             body: JSON.stringify({
@@ -45,7 +45,7 @@ export default function Home() {
     return (
         <>
             <Head>
-                <title>Login</title>
+                <title>Home</title>
                 <style>@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap')</style>
                 <link rel="icon" href="https://cdn.freebiesupply.com/logos/large/2x/spotify-2-logo-png-transparent.png" />
             </Head>
@@ -54,7 +54,7 @@ export default function Home() {
 
                 <div className="max-w-6xl sm:max-w-3xl mt-10">
                     <h1 className="text-black text-center text-6xl px-6">
-                        <span className="text-green-600/90 font-semibold">Home{` `}</span>
+                        <span className="text-green-600/90 font-semibold">{` `}</span>Home
                     </h1>
                 </div>
 

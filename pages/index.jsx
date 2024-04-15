@@ -2,15 +2,23 @@ import Head from 'next/head';
 import ListenerCard from "./components/ListenerCard";
 import ListenerCardHorizontal from "./components/ListenerCardHorizontal";
 import { useEffect, useState, Fragment } from 'react';
+import {useUser} from '@auth0/nextjs-auth0/client';
 
 
 
 
 export default function Index() {
 
-    const handleButtonClick = () => {
+    const {user, error, isLoading} = useUser();
+
+    const getStartedButtonClick = () => {
         console.log('Button Clicked');
-        window.location.href = '/login'
+        window.location.href = '/api/auth/login'
+    };
+
+    const alreadyUserButtonClick = () => {
+        console.log('Button Clicked');
+        window.location.href = '/home'
     };
 
     return (
@@ -35,10 +43,14 @@ export default function Index() {
                     </h1>
                 </div>
 
-                <div className="pb-5">
-                    <button onClick={handleButtonClick} className="bg-green-600/90 text-3xl text-neutral-100/90 p-3 rounded-md hover:bg-green-700">
+                <div className="flex pb-5 gap-x-10">
+                    <a href="/api/auth/login" className="bg-gradient-to-b from-green-600/90 to-green-600/80 text-xl text-neutral-100/90 py-3 px-10 rounded-md hover:bg-green-700">
                         Get Started
-                    </button>
+                    </a>
+
+                    <a href="/home" className="bg-gradient-to-b from-gray-600/90 to-gray-600/80 text-xl text-neutral-100/90 py-3 px-5 rounded-md hover:bg-gray-700">
+                        Already a User?
+                    </a>
                 </div>
 
 
